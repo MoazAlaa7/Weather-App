@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="weather-container">
+      <h2 class="location"></h2>
+      <p class="datetime"></p>
+      <div class="details-container">
+        <div class="temp">
+          <div>
+            <h3 class="degrees"></h3>
+            <img src="" alt="" class="weather-icon" />
+          </div>
+          <p class="conditions"></p>
+        </div>
+        <div class="separate-line"></div>
+        <div class="more-details">
+          <div class="info">
+            <span>Feels like:</span>
+            <span class="feelslike"></span>
+          </div>
+          <div class="info">
+            <span>Humidity:</span>
+            <span class="humidity"></span>
+          </div>
+          <div class="info">
+            <span>Wind:</span>
+            <span class="wind"></span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="location-container">
+      <h1>Current Weather</h1>
+      <div class="input-container">
+        <label for="location">Search location</label>
+        <input type="text" id="location" placeholder="City name" required />
+      </div>
+      <button class="req-btn">Get Weather</button>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

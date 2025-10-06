@@ -1,0 +1,167 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+body {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: white;
+  font-family: "Times New Roman", Times, serif;
+  background-color: cadetblue;
+  height: 100vh;
+  text-shadow: 2px 2px 1px black;
+  margin: 0 100px;
+}
+
+input {
+  font-size: 16px;
+  width: 200px;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  box-shadow: 1px 1px 4px black;
+}
+
+button {
+  padding: 10px 20px;
+  border-radius: 5px;
+  background-color: green;
+  color: white;
+  border: none;
+  box-shadow: 1px 2px black;
+  cursor: pointer;
+  &:hover {
+    opacity: 0.9;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: scale(0.5);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+h1 {
+  font-size: 40px;
+  text-align: center;
+}
+
+.weather-container {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  gap: 10px;
+  width: 500px;
+  animation: fadeIn 1.5s;
+}
+
+.location {
+  font-size: 40px;
+}
+
+.datetime {
+  margin-top: -10px;
+}
+
+.degrees {
+  display: inline;
+  font-size: 100px;
+}
+
+.conditions {
+  font-size: 30px;
+}
+
+.details-container {
+  display: flex;
+}
+
+.more-details {
+  font-size: 20px;
+  line-height: 50px;
+  text-shadow: 1.5px 1.5px 1px black;
+}
+
+.separate-line {
+  border: 1px solid #ccc;
+  margin: 0 20px;
+}
+
+.temp {
+  position: relative;
+}
+
+.info {
+  position: relative;
+}
+
+.degrees::after,
+.feelslike::after {
+  content: "°F";
+  position: absolute;
+}
+
+.degrees::after {
+  font-size: 20px;
+}
+
+.feelslike::after {
+  font-size: 10px;
+  bottom: 20%;
+}
+
+.location-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.input-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  text-shadow: 1.5px 1.5px 1px black;
+}
+
+.temp > div {
+  display: flex;
+  align-items: center;
+}
+
+.weather-icon {
+  margin-left: auto;
+  padding: 10px;
+  width: 100px;
+  height: 100px;
+}
